@@ -1,0 +1,28 @@
+<section>
+  <h1>Github projects</h1>
+  <article>
+    <div class="project-logo">
+      <img src="/assets/OIP-3888128768.jpg">
+    </div>
+    <div class="project-detail"></div>
+    <div class="repository-links"></div>
+  </article>
+  <article>
+    <div class="project-logo">
+      <img src="/assets/funda_logo_new_author-811833339.webp">
+    </div>
+    <div class="project-detail"></div>
+    <div class="repository-links"></div>
+  </article>
+  <article>
+    <div class="project-logo">
+      <img src="/assets/logo-algemeen">
+    </div>
+    <div class="project-detail"></div>
+    <div class="repository-links"></div>
+  </article>
+</section>
+
+{% for project in projecten %}
+  {{ project.naam }}
+{% endfor %}
