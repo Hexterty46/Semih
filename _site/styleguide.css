@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  color-scheme: light dark;
+  transition:
+    background-color 0.3s linear,
+    color 0.3s linear;
+
+  /* --------- font sizes --------- */
+  --paragraph: clamp(1.1rem, 2vw, 1.2rem);
+  --heading-small: clamp(1.2rem, 2vw, 1rem);
+  --heading-medium: clamp(1.5rem, 2vw, 1.8rem);
+  --heading-big: clamp(1.4rem, 2vw, 2rem);
+
+  /* --------- colors --------- */
+
+  /* main colors */
+  --light-background: light-dark(#f7f7f7, hsl(0, 0%, 12%));
+  --medium-background: light-dark(#e6e6e6, #d6d6d6);
+  --dark-background: light-dark(hsl(0, 0%, 12%), #f7f7f7);
+
+  --light-text: light-dark(#f7f7f7, #1a1a1a);
+  --dark-text: light-dark(#1a1a1a, #f7f7f7);
+  --body-background-green: #fe8b5038;
+
+  /* accent colors */
+  --accent-card: light-dark(#2c3e50, #43a7ff);
+  --accent-button: light-dark(#43a7ff, #2c3e50);
+  --accent-header: light-dark(#1a1a1a, #f7f7f7);
+
+  --primary: light-dark(#2c3e50, #43a7ff);
+  --secondary: #ff6f20;
+
+  /* --------- borders --------- */
+  --border-image: 1rem;
+  --border-popover: 1rem;
+  --border-card: 0.8rem;
+  --border-badge: 2rem;
+  --border-button: 1.5rem;
+  --border-round: 100%;
+
+  /* exclusions for light dark */
+  --always-black: hsl(0, 0%, 12%);
+  --always-light: #ffffff;
+
+  background-color: var(--light-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-size: var(--heading-medium);
+  color: var(--dark-text);
+}
